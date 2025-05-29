@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun Mas Yusuf 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #ffd6ec);
+      color: #4d004d;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 10px 20px;
+    }
+    button {
+      background-color: #ff80bf;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #e64d99;
+    }
+    .sparkle {
+      position: fixed;
+      width: 5px;
+      height: 5px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px white;
+      animation: sparkle 2s linear infinite;
+    }
+    @keyframes sparkle {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(100vh); opacity: 0; }
+    }
+    iframe {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 Selamat Ulang Tahun Mas Yusuf! 🎂</h1>
+  <p>Hai sayangkuu, cintakuu, kekasihkuu, gantengkuu, calon suamikuu, dunia akhiratku, selamat ulang tahun yang ke 24 yaa💖🥰</p>
+  <p>Doa adee selalu hadir untuk menemani hari-hari mas, makasih udah lahir ke dunia ini. Mas lelaki hebat yang ade sayangi banget banget banget!</p>
+  <p>Mas udah bikin ade sekuat ini, mas keren banget, sehat selalu yaa sayangkuu. Pokoknya terbaik buat mas selalu💞 Always love you 💞</p>
+
+  <button onclick="document.getElementById('player').src += ''">🔊 Play Lagu</button><br/><br/>
+
+  <a href="#" onclick="alert('Hehehe... ini pesan rahasianya yaa 😳
+
+Adee bersyukur banget bisa LDR sama mas, meski jauh tapi hati ade ngerasa deket terus... Makasih ya mas udah sabar dan sayangin ade selalu 🥺💖')">
+    🎁 Klik Hadiah Rahasia
+  </a><br/><br/>
+
+  <form action="mailto:princessputmel@gmail.com" method="POST" enctype="text/plain">
+    <p>Kirim balasan ucapan ke Ade di sini:</p>
+    <input type="text" name="name" placeholder="Nama Kamu" required />
+    <br/><br/>
+    <textarea name="message" rows="4" cols="30" placeholder="Tulis ucapannya yaa..." required></textarea>
+    <br/><br/>
+    <button type="submit">💌 Kirim Balasan</button>
+  </form>
+
+  <iframe id="player" width="0" height="0" src="https://www.youtube.com/embed/qZV2BeJ1I1c?autoplay=1&loop=1&playlist=qZV2BeJ1I1c" frameborder="0" allow="autoplay"></iframe>
+
+  <script>
+    // Generate sparkles
+    for (let i = 0; i < 100; i++) {
+      let sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = Math.random() * 100 + 'vw';
+      sparkle.style.animationDuration = (1 + Math.random() * 2) + 's';
+      document.body.appendChild(sparkle);
+    }
+  </script>
+</body>
+</html>
